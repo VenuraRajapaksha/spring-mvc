@@ -14,6 +14,12 @@ public class GreetingController {
         return "greeting";
     }
 
+    @GetMapping("thyme")
+    public String thyme (Map<String , Object> Model) {
+        Model.put("message" , "Hello thyme");
+        return "thyme";
+    }
+
 
 
 }
